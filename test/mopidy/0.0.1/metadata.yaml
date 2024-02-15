@@ -1,0 +1,8 @@
+runAsContext:
+  - userName: mopidy
+    groupName: mopidy
+    gid: 568
+    uid: 568
+    description: Mopidy runs as any non-root user.
+capabilities: []
+hostMounts: []

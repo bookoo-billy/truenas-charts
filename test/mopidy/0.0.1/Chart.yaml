@@ -1,0 +1,26 @@
+name: mopidy 
+description: Mopidy is a Free Software Media System that puts you in control of
+  managing and streaming your media.
+annotations:
+  title: Mopidy
+type: application
+version: 0.0.1
+apiVersion: v2
+appVersion: 0.0.1
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: bookoo
+    url: https://www.example.com
+    email: foo@example.com
+dependencies:
+  - name: common
+    repository: file://../../../common
+    version: 1.2.3
+home: https://mopidy.com/
+icon: https://raw.githubusercontent.com/home-assistant/brands/master/custom_integrations/mopidy/icon.png
+sources:
+  - https://github.com/bookoo-billy/truenas-charts/tree/master/test/mopidy
+  - https://mopidy.com/
+keywords:
+  - media
+  - streaming

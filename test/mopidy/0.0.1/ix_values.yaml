@@ -1,0 +1,33 @@
+image:
+  repository: mopidy/mopidy
+  pullPolicy: IfNotPresent
+  tag: 0.0.1
+
+resources:
+  limits:
+    cpu: 4000m
+    memory: 8Gi
+
+mopidyConfig:
+  publishedServerUrl: ''
+  additionalEnvs: []
+mopidyGPU: {}
+mopidyNetwork:
+  webPort: 30013
+  hostNetwork: false
+mopidyRunAs:
+  user: 568
+  group: 568
+mopidyStorage:
+  config:
+    type: ixVolume
+    datasetName: config
+  cache:
+    type: ixVolume
+    datasetName: cache
+  transcodes:
+    type: ixVolume
+    datasetName: transcodes
+    medium: ''
+    size: ''
+  additionalStorages: []
